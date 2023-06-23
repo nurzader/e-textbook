@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/e-textbook/static/css/main.3ebce9d3.css",
+    "main.js": "/e-textbook/static/js/main.86605610.js",
+    "index.html": "/e-textbook/index.html",
+    "main.3ebce9d3.css.map": "/e-textbook/static/css/main.3ebce9d3.css.map",
+    "main.86605610.js.map": "/e-textbook/static/js/main.86605610.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ebce9d3.css",
+    "static/js/main.86605610.js"
+  ]
+}
