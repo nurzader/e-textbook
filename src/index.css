@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+.header {
+  @apply bg-sky-800 text-white font-poppins h-[76px] py-[10px] px-[50px] fixed w-full z-[10] top-0 overflow-hidden;
+}
+
+.logo {
+  @apply inline-block font-poppins font-bold text-xl tracking-wider;
+}
+
+.navItem {
+  @apply border-b-2 border-transparent hover:border-b-2 hover:border-white;
+}
+
+.btn {
+  @apply py-2.5 px-5 mr-2 mb-2 font-medium bg-slate-300 rounded-lg border cursor-pointer hover:bg-slate-200;
+}
+
+.searchInput {
+  @apply relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200;
+}
+
+.searchInput:focus {
+  @apply z-[3] border-sky-700 text-neutral-700 shadow-[inset_0_0_0_1px_rgb(59,113,202)] outline-none;
+}
+
+.searchIcon {
+  @apply relative z-[0] flex items-center rounded-r bg-sky-800 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-sky-600 hover:shadow-lg focus:bg-sky-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-sky-700 active:shadow-lg;
+}
+
+.titleLink {
+  @apply font-semibold text-lg border-b-2 border-transparent hover:border-b-2 hover:border-red-600 hover:text-red-600;
+}
+
+.sideBar {
+  @apply bg-slate-100 w-[300px] pl-12 pr-3 py-5 h-screen border-r-2 border-slate-400 fixed z-[1] left-0 overflow-hidden;
+}
