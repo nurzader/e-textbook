@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../UI/Button';
+import Button from '../components/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectScore, resetQuiz } from '../redux/slices/quizSlice';
 
-const TestResult = ({questions}) => {
+const TestResult = ({ questions }) => {
   const score = useSelector(selectScore);
   const dispatch = useDispatch();
 

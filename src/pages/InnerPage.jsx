@@ -6,15 +6,13 @@ import SideBar from '../components/SideBar';
 const InnerPage = () => {
   const { id } = useParams();
 
-  console.log(id);
-
-  const items = data.find((user) => user.id === id);
+  let items = data.find((user) => user.id === id);
 
   return (
     <div className="flex justify-center h-screen mt-[76px]">
       <SideBar items={items} />
 
-      <div className="flex flex-col gap-10 p-9 w-full max-w-[800px] ml-[230px]">
+      <div className="flex flex-col gap-10 py-9 max-w-[700px] ml-[200px]">
         <ul className="flex flex-col gap-10">
           {items.subjects.map((el, i) => (
             <li key={i} id={el.path}>

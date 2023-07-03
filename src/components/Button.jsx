@@ -5,7 +5,7 @@ const Button = ({ title, onClick }) => {
     <button onClick={onClick} className="btn">
       {title}
     </button>
-  )
+  );
 };
 
 export default Button;

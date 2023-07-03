@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../UI/Button';
+import Button from '../components/Button';
 import questions from '../assets/questions.json';
 import { useDispatch, useSelector } from 'react-redux';
 import {

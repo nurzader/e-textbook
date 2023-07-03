@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import data from '../assets/data.json';
-import Search from '../UI/Search';
+import Search from '../components/Search';
 import DataList from '../components/DataList';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
   const handleInputChange = (event) => {
     setSearchValue(event.target.value);
   };
-
+  
   const handleSearchClick = () => {
     let result = [];
     for (let i = 0; i < data.length; ++i) {
@@ -34,13 +34,11 @@ const Home = () => {
     }
     setSearchResults(result);
   };
-
   return (
     <main className="container ml-auto mr-auto mt-[100px] py-5 flex flex-col gap-7">
       <div className="flex justify-around items-center text-neutral-800">
         <h1 className="font-bold text-3xl">
-          Электронный учебник
-          <br /> "Имитационное Моделирование"
+          Электронный учебник <br /> "Имитационное Моделирование"
         </h1>
         <Search
           searchValue={searchValue}

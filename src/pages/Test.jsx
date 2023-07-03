@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Questions from '../components/Questions';
-import Button from '../UI/Button';
+import Button from '../components/Button';
 import { startQuiz } from '../redux/slices/quizSlice';
 import { useDispatch } from 'react-redux';
 
@@ -18,6 +18,7 @@ const Test = () => {
       <h2 className="font-bold text-3xl mb-8 text-center">Тестирование знаний</h2>
       <div className="border border-gray-200 shadow-lg rounded-lg p-7 flex flex-col ">
         <div className="text-center">
+          <Button title="ghdhgh" />
           {!quizStarted ? <Button onClick={onStart} title="Пройти тестирование" /> : <Questions />}
         </div>
       </div>

@@ -12,10 +12,10 @@ const Navigation = () => {
             </Link>
           </h3>
           <ul className="flex items-center justify-between gap-8 text-lg">
-            <li className='navItem'>
+            <li className="navItem">
               <Link to="/">Учебник</Link>
             </li>
-            <li className='navItem'>
+            <li className="navItem">
               <Link to="/test">Тест</Link>
             </li>
           </ul>
