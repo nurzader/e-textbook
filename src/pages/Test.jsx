@@ -18,7 +18,6 @@ const Test = () => {
       <h2 className="font-bold text-3xl mb-8 text-center">Тестирование знаний</h2>
       <div className="border border-gray-200 shadow-lg rounded-lg p-7 flex flex-col ">
         <div className="text-center">
-          <Button title="ghdhgh" />
           {!quizStarted ? <Button onClick={onStart} title="Пройти тестирование" /> : <Questions />}
         </div>
       </div>
